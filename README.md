@@ -1,6 +1,12 @@
 # database-tracker
 
-<!-- GIVEN a command-line application that accepts user input
+# Worked on this assignment with Justin Berg
+
+# Was able to create an application that functions from the command line interface that allows me to view it and also update any data from the Database. 
+
+# I followed the given Acceptance Criteria given from Module Challenge 12
+
+GIVEN a command-line application that accepts user input
 WHEN I start the application
 THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role (done)
 
