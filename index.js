@@ -1,15 +1,5 @@
 const inquirer = require("inquirer");
 const connection = require("./connection.js");
-const questions = [
-  { type: "input", message: "something in", name: "first" },
-  {
-    type: "list",
-    message: "please choose one",
-    name: "second",
-    choices: ["first string", "second string", "third string"],
-  },
-  { name: "third", message: "tell me a joke", type: "input" },
-];
 
 const menuquestion = {
   type: "list",
@@ -21,14 +11,14 @@ const menuquestion = {
     "employees",
     "add a department",
     "add a role",
-    "add a employee",
+    "add an employee",
     "update an employee role",
     "Quit"
   ],
 };
 
 function promptMenu() {
-  inquirer.prompt(menuquestion).then(({answers}) => {
+  inquirer.prompt(menuquestion).then(({answer}) => {
     console.log(answer);
     switch (answer) {
       case "departments":
@@ -45,6 +35,9 @@ function promptMenu() {
         break;
       case "add a role":
         addRole();
+        break;
+      case "add an employee":
+        addEmployee();
         break;
       case "update an employee role":
         updateEmployeeRole();
